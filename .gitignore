@@ -1,5 +1,6 @@
 /dprk
 *.swp
+.*.*.swp
 .DS_Store
 /files
 /img
