@@ -1,0 +1,476 @@
+/* =============================================================================
+   HTML5 Boilerplate CSS: h5bp.com/css
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+::-moz-selection { background: #0ea2d1; color: #fff; text-shadow: none; }
+::selection { background: #0ea2d1; color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+ul { list-style:none; margin:0; padding:0;<D-r> }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+
+/* ===== Primary Styles ========================================================
+   Author: Francis Tseng
+	 URL: yadonchow.com
+	 Last Updated: 03.17.2012
+	 Additional credits: Harry Roberts, from who via csswizardry.com I learn many of the techniques used here, and of course the HTML5 Boilerplate team.
+   ========================================================================== */
+
+html {
+	overflow-y:scroll;
+	background:white;
+	min-width:360px;
+}
+
+html, body { overflow-x:hidden; }
+
+body {
+	font-family:'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height:1.4;
+	height:100%;
+	padding:3%;
+	color:#30313e;
+}
+
+a, a:visited {
+	color:#7EB4B4;
+	font-style:normal;
+	text-decoration:none;
+}
+	a:hover, a.pseudohover {
+		color:#3EC9C2;
+	}
+
+h1 {
+	font-size:1.4em;
+	margin-top:0;
+	text-transform:uppercase;
+	font-family:'MuseoSans900', Helvetica, Arial, sans-serif;
+}
+	h1 a, h1 a:visited {
+		color:#30313e;
+
+			-webkit-transition: color 0.2s ease-in-out;
+			-o-transition: color 0.2s ease-in-out;
+			-moz-transition: color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
+	}
+	h1 a:hover { color:#3EC9C2; text-decoration:none; }
+h2 {
+	font-size:1.25em;
+	color:#556270;
+	margin-top:0.5em;
+	font-family:'MuseoSans900', Helvetica, Arial, sans-serif;
+}
+h3 {
+	font-style:italic;
+	font-weight:normal;
+	font-family:'Museo300', Helvetica, Arial, sans-serif;
+	font-size:0.75em;
+	-moz-border-radius:12px 12px 0 0;
+	-webkit-border-radius:12px 12px 0 0;
+	border-radius:12px 12px 0 0;
+	width:55%;
+	margin:0 auto;
+	padding:0.3em 0.4em;
+	background:#3EC9C2;
+}
+
+#main {
+	max-width:1200px;	
+	margin:0 auto;
+}
+
+.sidebar {
+	float:left;
+	width:18%;	
+}
+
+header {
+	color:#fff;
+	padding:0em 0.6em 0em 0.6em;
+	text-align:center;
+}
+	header img {
+		margin-bottom:0.9em;
+		width:125px;
+		height:125px;
+	}
+
+nav, .info {
+	color:#30313e;	
+	padding:1.5em;
+	margin:0;
+	font-size:0.8em;
+}
+	.info {
+			padding:1.2em 1.5em 1.5em 1.5em;
+	}
+		.info h2 {
+			color:#556270;
+			padding:0.5em 0em 0em 0em;
+			border-bottom:1px dotted #3EC9C2;
+		}
+	nav ul { margin:0 0 0.8em 0; display:inline-block; width:84%; }
+	nav ul li { margin:0 0 0.3em 0; }
+
+.display, .portfolio {
+	float:left;
+	margin:0;
+	width:74%;
+	margin-left:4em;
+	position:relative;
+}
+	.display a, .display a:visited,
+	.info a, .info a:visited { color:#3EC9C2; text-decoration:none; }
+	.display a:hover,
+	.info a:hover { text-decoration:underline; }
+	.portfolio {
+		-moz-column-count:3;
+		-moz-column-gap:1em;
+		-webkit-column-count:3;
+		-webkit-column-gap:1em;
+		column-count:3;
+		column-gap:1em;
+	}
+		.portfolio article {
+			margin:0 1em 3em 1em;
+			-moz-border-radius:8px;
+			-webkit-border-radius:8px;
+			border-radius:8px;
+			text-align:center;
+			padding:3%;
+			display:inline-block;
+			width:84%;
+			-moz-background-size:cover;
+			-webkit-background-size:cover;
+			background-size:cover;
+			background-position: 50% 50%;
+			background-repeat:no-repeat;
+			padding:2em 0;
+			font-family:'MuseoSans900', Helvetica, Arial, sans-serif;
+			text-shadow:1px 1px 0 rgba(0, 0, 0, 0.7);
+			border:3px solid transparent;
+			text-transform:uppercase;
+		}
+		.portfolio article:hover, .portfolio article.pseudohover-img { border:3px solid #3EC9C2; }
+
+figure { width:100%; text-align:center; position:relative; margin:0; }
+	figure.slider { padding-bottom:2em; }
+	figure img {
+		max-width:100%;
+		max-height:80%;
+		margin:0 0 1em 0;
+		-moz-box-shadow:0px 0px 6px rgba(0,0,0,0.3)
+		-webkit-box-shadow:0px 0px 6px rgba(0,0,0,0.3);
+		box-shadow:0px 0px 6px rgba(0,0,0,0.3);
+	}
+		figure img.wbg {
+			-moz-box-shadow:none;
+			-webkit-box-shadow:none;
+			box-shadow:none;
+		}
+		figure.slider img { max-height:none; }
+		figure img.top { z-index:2; }
+		figure img.bottom { z-index:1; position:absolute; top:0; left:0; }
+	figcaption {
+		text-align:left;
+
+		-webkit-transition: top 0.2s ease-in-out;
+		-o-transition: top 0.2s ease-in-out;
+		-moz-transition: top 0.2s ease-in-out;
+		transition: top 0.2s ease-in-out;
+	}
+		figcaption.top-caption { z-index:2 }
+		figcaption.bottom-caption { z-index:1; position:absolute; left:0; }
+		figcaption h2 { margin-top:1em; }
+		figcaption p { margin-bottom:7em; }
+
+.selector { text-align:right; margin-bottom:0.2em; }
+	.selector a {
+		display:inline-block;
+		margin:0 0.2em;
+		width:12px;
+		height:12px;
+		background:url('/img/design/selector.png');
+		background-position:12px center;
+	}
+		.selector a:hover, .selector a.active { background-position:0px center; }
+		@media
+				only screen and (-webkit-min-device-pixel-ratio : 1.5),
+				only screen and (min-device-pixel-ratio : 3/2) {
+					.selector a {
+						background-image:url('/img/design/selector@4.png');
+						-webkit-background-size:24px 12px;
+						background-size:24px 12px;
+					}
+			}
+
+
+.next, .prev {
+	position:absolute;
+	top:12em;
+	background:rgba(0,0,0,0.5);
+	padding:0.4em 0.8em;
+	-moz-border-radius:1em;
+	-webkit-border-radius:1em;
+	border-radius:1em;
+	cursor:pointer;
+	display:none;
+	color:#fff;
+}
+	.next:hover, .prev:hover { background:#3EC9C2; }
+	.next { right:2%; }
+	.prev { left:2%; }
+
+/* *** Fonts *** */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+/*
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      exljbris
+ * License URL: http://www.fontspring.com/fflicense/exljbris
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'MuseoSans900';
+    src: url('/font/MuseoSans_900-webfont.eot');
+    src: url('/font/MuseoSans_900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/MuseoSans_900-webfont.woff') format('woff'),
+         url('/font/MuseoSans_900-webfont.ttf') format('truetype'),
+         url('/font/MuseoSans_900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo300';
+    src: url('/font/Museo300-Italic-webfont.eot');
+    src: url('/font/Museo300-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/Museo300-Italic-webfont.woff') format('woff'),
+         url('/font/Museo300-Italic-webfont.ttf') format('truetype'),
+         url('/font/Museo300-Italic-webfont.svg#Museo300Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* *** Projects *** */
+#nito { background:#113d56; color:white; }
+#supersuper { background:#000; color:white; }
+#canvaslab { background:#23242d; color:white; }
+
+
+
+
+
+
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (max-width:950px) {
+	.display, .portfolio {
+		width:70%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	body { padding:0; }	
+	header {
+		background:#3EC9C2;		
+		padding-top:1em;		
+	}
+		h1 a, h1 a:visited { color:#fff; }
+		h3 { background:#fff; color:#30313e; }		
+	.sidebar {
+		float:none;
+		width:100%;
+		-moz-column-count:auto;
+		-webkit-column-count:auto;
+		column-count:auto;
+		margin-bottom:1.5em;
+	}
+	nav, .info {
+		width:auto;
+		margin:0;
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+		box-shadow:none;
+		}
+		nav {
+			-moz-column-count:3;
+			-webkit-column-count:3;
+			column-count:3;
+			column-gap:1em;
+		}
+			nav ul {
+				margin:0;
+				-webkit-column-break-after:always;
+				-moz-column-break-after:always;
+				column-break-after:always;
+			}
+		.info {
+			text-align:center;
+			margin-top:1px;
+			padding:0.5em 0.5em 0 0.5em;
+		}
+			.info h2 {
+				margin:0.5em 2em 0 2em;
+			}
+			.info p {
+				padding:0.5em 2em 1.5em 2em;
+			}
+
+	.display, .portfolio {
+		float:none;
+		margin:1em auto 4em auto;
+		width:90%;
+	}
+
+	figure.slider { padding:3em 0; }
+
+	.selector { text-align:center; }
+
+	.next, .prev {
+		top:0;
+		display:block;
+	}
+		.next { right:0; }
+		.prev { left:0; }
+}
+
+@media only screen and (max-width:600px) {
+	nav, .portfolio {
+		-moz-column-count:2;
+		-webkit-column-count:2;
+		column-count:2;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	header { margin-bottom:0; }
+	.portfolio {
+		-moz-column-count:auto;
+		-webkit-column-count:auto;
+		column-count:auto;
+	}
+	.info {
+		padding:1em 0 0 0;
+	}
+		.info h2 {
+			background:#3EC9C2;
+			color:#fff;
+			border-bottom:none;
+			padding:0.5em 0;
+			margin:0.5em 0;
+		}
+	
+}
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+
+
