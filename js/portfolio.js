@@ -83,8 +83,6 @@
 							i.push(0);
 							sizes.push( sectionSize );
 
-							console.log(sizes);
-
 							section.find('.display').append(
 								'<img class="dummy" src="/img/portfolio/shots/dummy.png" />\n'
 							);

@@ -51,6 +51,10 @@
 				<article style="background-image:url('/img/design/rightseason.jpg');"></article>
 			</a>
 
+			<a href="/design/calendar">
+				<article style="background-image:url('/img/design/calendar.png');"></article>
+			</a>
+
 	</div>
 
 <?php include "footer.html" ?>
