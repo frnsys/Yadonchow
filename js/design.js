@@ -135,25 +135,31 @@ $(function() {
 					}
 			)
 		}
-		$.initHovers();
 
-		// only initialize arrow fades if window is large enough
-		if ( $(window).width() > 800 ) {
-			$.initArrowFade();
-		}
-		$.initSlider();
 
-		// responsive:
-		// handle window resizing
-		$(window).resize(function() {
-			if ( $(window).width() < 800 ) {
-				// stop the arrow slider buttons from fading
-				$('.next, .prev').show();
-				$('.display').unbind('hover');
-			}
-			else {
+		if ( !$('.no-slide').length ) {
+
+			$.initHovers();
+
+			// only initialize arrow fades if window is large enough
+			if ( $(window).width() > 800 ) {
 				$.initArrowFade();
 			}
-		});
+			$.initSlider();
+
+			// responsive:
+			// handle window resizing
+			$(window).resize(function() {
+				if ( $(window).width() < 800 ) {
+					// stop the arrow slider buttons from fading
+					$('.next, .prev').show();
+					$('.display').unbind('hover');
+				}
+				else {
+					$.initArrowFade();
+				}
+			});
+
+		}
 
 });

@@ -385,6 +385,14 @@ header img,
 	.overview figcaption {
 		color:#888;
 	}
+.no-csscolumns .overview > figure,
+.no-csscolumns .cols > figure {
+	float:left;
+	margin:0 2%;
+	width:23%;
+}
+
+.main-content { clear:both; }
 
 
 nav {
@@ -652,6 +660,3 @@ footer {
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
-
-
-
