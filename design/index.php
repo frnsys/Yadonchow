@@ -55,6 +55,14 @@
 				<article style="background-image:url('/img/design/calendar.png');"></article>
 			</a>
 
+			<a href="/design/twice">
+				<article style="background-image:url('/img/design/twice.png');"></article>
+			</a>
+
+			<a href="/design/smartercookie">
+				<article style="background-image:url('/img/design/smartercookie.png');"></article>
+			</a>
+
 	</div>
 
 <?php include "footer.html" ?>
