@@ -523,13 +523,6 @@ footer {
 	#canvaslab .access:hover { background:#fe4365; }
 	#canvaslab a { color:#43A4FE; }
 
-#todo header { background:#ededed; color:#30313e; }
-	#todo .summary { color:#888; }
-	#todo .access { background:#1F6FAF; color:white; }
-	#todo .access:hover { background:#d04b96; }
-	#todo em, #todo b { color:#d04b96; }
-	#todo a { color:#1F6FAF; }
-
 #goldenages { background-image:url('/img/projects/goldenages/background.jpg'); }
 	#goldenages header { padding:0; }
 	#goldenages header img { display:block; width:auto; margin:0 auto; }
