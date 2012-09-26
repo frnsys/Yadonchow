@@ -264,6 +264,36 @@ header, footer, .content, .section {
 		margin:0 2em 2em 0;
 	}
 	.close:hover { background:#E84238 url('/img/cv/arrow-up.png') no-repeat right center; }
+	@media
+		only screen and (-webkit-min-device-pixel-ratio : 1.5),
+		only screen and (min-device-pixel-ratio : 3/2) {
+			.show, .hide, .close {
+				background:#0ea2d1 url('/img/cv/arrow-right@2.png') no-repeat right center;
+				-webkit-background-size:20px 16px;
+				background-size:20px 16px;				
+			}
+			.show:hover {
+				background:#E84238 url('/img/cv/arrow-right@2.png') no-repeat right center;
+				-webkit-background-size:20px 16px;
+				background-size:20px 16px;
+			}
+			.hide {
+				background:#0ea2d1 url('/img/cv/arrow-down@2.png') no-repeat right center;
+				-webkit-background-size:20px 16px;
+				background-size:20px 16px;
+			}
+			.hide:hover {
+				background:#E84238 url('/img/cv/arrow-down@2.png') no-repeat right center;
+				-webkit-background-size:20px 16px;
+				background-size:20px 16px;
+			}
+			.close {
+				background:#0ea2d1 url('/img/cv/arrow-up@2.png') no-repeat right center;
+				-webkit-background-size:20px 16px;
+				background-size:20px 16px;
+			}
+
+	}
 
 /* *** Skills *** */
 
